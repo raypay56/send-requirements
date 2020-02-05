@@ -1,0 +1,34 @@
+<mat-card class="requirements-card">
+    <header> Requirements </header>
+    <form [formGroup]= "requirementsData" (ngSubmit) = "onSave()">
+        <div class="form-field-container">
+            <div class="field"> 
+                <span class="title-container"> Job Title </span>
+                <mat-form-field appearance="outline" class = "input-container">
+                    <input matInput formControlName = "jobTitle">
+                </mat-form-field>
+            </div>
+            <div class="field"> 
+                <span class="title-container"> Discription </span> 
+                <mat-form-field appearance="outline" class = "input-container">
+                    <textarea matInput  formControlName = "jobDiscription"></textarea>
+                </mat-form-field>
+            </div>
+            <div class="field">
+                <span class="title-container"> Experience Required </span>
+                <mat-form-field appearance="outline" class = "input-container">
+                    <input matInput  formControlName = "experienceRequired">
+                </mat-form-field>
+            </div>
+            <div class="field">
+                <span class="title-container"> Salary </span>
+                <mat-form-field appearance="outline" class = "input-container">
+                    <input matInput formControlName = "salary" >
+                </mat-form-field> 
+            </div> 
+        </div>  
+        <div class="button" >
+            <button mat-raised-button class="save-button"> Send </button>
+        </div>
+    </form>
+</mat-card>
