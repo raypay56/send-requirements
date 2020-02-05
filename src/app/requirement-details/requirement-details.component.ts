@@ -21,7 +21,7 @@ export class RequirementDetailsComponent implements OnInit {
     })
    }
 
-   onSave(){
+   onSend(){
      //whatever you want to do with the data
    }
 

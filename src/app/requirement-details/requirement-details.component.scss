@@ -23,9 +23,9 @@ header{
 }
 .field{
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: 10px;
+    flex-wrap: wrap;
 }
 .form-field-container {
     display: flex;
